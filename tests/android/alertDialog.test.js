@@ -1,4 +1,4 @@
-import { AlertDialogsScreen } from '../../android/screenObject/screens/alertDialogsScreen/alertDialogs.screen';
+import { AlertDialogsScreen } from '../../screenObject/android/screens/alertDialogsScreen/alertDialogs.screen';
 
 describe('Alert Dialog test', () => {
   let alertDialogsScreen;
@@ -14,7 +14,7 @@ describe('Alert Dialog test', () => {
     });
   });
 
-  describe('Click the "Dialog with message" button', () => {
+  describe('Tap the "Dialog with message" button', () => {
     before(async () => {
       await alertDialogsScreen.dialogWithMessageButton.tap();
     });

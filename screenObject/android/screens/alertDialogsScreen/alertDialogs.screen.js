@@ -1,7 +1,7 @@
-import { BaseScreen } from '../../base';
-import { Button } from '../../controls';
-import { DialogWithMessage } from './dialogWithMessage';
-import { Label } from '../../controls';
+import { BaseScreen } from '../../../base';
+import { Button } from '../../../controls';
+import { DialogWithMessage } from '../../popups';
+import { Label } from '../../../controls';
 
 export class AlertDialogsScreen extends BaseScreen {
   constructor(appPackage = 'io.appium.android.apis', appActivity = '.app.AlertDialogSamples') {

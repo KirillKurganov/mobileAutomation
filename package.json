@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tests-android": "npx wdio config/wdio.android.conf.js"
+    "tests-android": "npx wdio config/wdio.android.conf.js",
+    "tests-ios": "npx wdio config/wdio.ios.conf.js"
   },
   "repository": {
     "type": "git",
