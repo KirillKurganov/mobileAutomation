@@ -1,3 +1,4 @@
-import { DialogWithMessage } from './dialogWithMessage';
+import { DialogWithMessage } from './dialogWithMessage/dialogWithMessage';
+import { SingleChoicePopup } from './singleChoice/singleChoice.popup';
 
-export { DialogWithMessage };
+export { DialogWithMessage, SingleChoicePopup };

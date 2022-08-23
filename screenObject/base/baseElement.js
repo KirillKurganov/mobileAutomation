@@ -18,4 +18,13 @@ export class BaseElement {
   async toContainText(expectedText) {
     return String(await $(this.selector).getText()).includes(expectedText);
   }
+
+  async waitForElementIsNotDisplayed() {
+    await $(this.selector).waitUntil(
+      async function () {
+        return (await $(this.selector).isDisplayed()) === false;
+      },
+      { timeout: 5000 }
+    );
+  }
 }

@@ -1,5 +1,5 @@
-import { BasePopup } from '../../base';
-import { Icon, Label } from '../../controls';
+import { BasePopup } from '../../../base';
+import { Icon, Label } from '../../../controls';
 
 export class DialogWithMessage extends BasePopup {
   constructor(selector, okButtonSelector, cancelButtonSelector) {

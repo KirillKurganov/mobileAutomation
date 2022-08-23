@@ -1,4 +1,4 @@
-import { AlertDialogsScreen } from '../../screenObject/android/screens/alertDialogsScreen/alertDialogs.screen';
+import { AlertDialogsScreen } from '../../screenObject/android/screens';
 
 describe('Alert Dialog test', () => {
   let alertDialogsScreen;
