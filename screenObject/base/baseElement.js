@@ -7,6 +7,10 @@ export class BaseElement {
     await $(this.selector).click();
   }
 
+  async scrollIntoView() {
+    await $(this.selector).scrollIntoView();
+  }
+
   async getText() {
     return await $(this.selector).getText();
   }
@@ -26,5 +30,9 @@ export class BaseElement {
       },
       { timeout: 5000 }
     );
+  }
+
+  async waitForElementDisplayed() {
+    await $(this.selector).waitForDisplayed();
   }
 }

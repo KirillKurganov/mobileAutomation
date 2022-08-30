@@ -5,7 +5,7 @@ export class CheckBox extends BaseElement {
     super(selector);
   }
 
-  async isSelected() {
-    return await $(this.selector).isSelected();
+  async isChecked() {
+    return (await $(this.selector).getAttribute('checked')) === 'true';
   }
 }

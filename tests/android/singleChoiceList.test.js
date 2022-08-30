@@ -36,19 +36,23 @@ describe('Single choice list tests', () => {
       expect(await alertDialogsScreen.singleChoicePopup.mapCheckBox.isDisplayed()).toEqual(true);
     });
 
+    it('verify the "Map" checkBox is checked', async () => {
+      expect(await alertDialogsScreen.singleChoicePopup.mapCheckBox.isChecked()).toEqual(true);
+    });
+
     it('verify the "Map" checkBox text is correct', async () => {
       const expectedResult = 'Map';
       expect(await alertDialogsScreen.singleChoicePopup.mapCheckBox.getText()).toEqual(expectedResult);
     });
   });
 
-  describe('Select the "Street view" radio button', () => {
+  describe('Select the "Street view" check box', () => {
     before(async () => {
       await alertDialogsScreen.singleChoicePopup.streetViewCheckBox.tap();
     });
 
-    it('verify the "Map" checkBox is not selected', async () => {
-      expect(await alertDialogsScreen.singleChoicePopup.mapCheckBox.isSelected()).toEqual(false);
+    it('verify the "Map" checkBox is not checked', async () => {
+      expect(await alertDialogsScreen.singleChoicePopup.mapCheckBox.isChecked()).toEqual(false);
     });
   });
 
