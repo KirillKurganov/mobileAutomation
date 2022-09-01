@@ -1,4 +1,4 @@
-import { AlertViewsScreen } from '../../screenObject/ios/screens/alertViewsScreen';
+import { AlertViewsScreen } from '../../screenObject/ios/screens';
 
 describe('Alert views test', () => {
   let alertViewsScreen;

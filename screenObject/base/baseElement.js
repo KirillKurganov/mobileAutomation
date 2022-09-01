@@ -4,15 +4,22 @@ export class BaseElement {
   }
 
   async tap() {
-    await $(this.selector).click();
+    await $(this.selector).touchAction('tap');
   }
 
-  async scrollIntoView() {
-    await $(this.selector).scrollIntoView();
+  async tapSeveralTimes(number) {
+    for (let i = 0; i < number; i++) {
+      await this.tap();
+      await driver.pause(1000);
+    }
   }
 
   async getText() {
     return await $(this.selector).getText();
+  }
+
+  async getValue() {
+    return await $(this.selector).getValue();
   }
 
   async isDisplayed() {
