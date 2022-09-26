@@ -12,4 +12,8 @@ export class Input extends BaseElement {
   async getInputValue() {
     return await super.getText();
   }
+
+  async setValue(value) {
+    await $(this.selector).setValue(value);
+  }
 }

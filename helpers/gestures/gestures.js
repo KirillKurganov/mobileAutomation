@@ -52,4 +52,12 @@ export class Gestures {
     const endCoordinates = this.getCoordinates(size, direction.up.end);
     await this.swipe(startCoordinates, endCoordinates);
   }
+
+  async swipeElementToCoordinates(element, coordinates) {
+    await browser.touchAction([
+      { action: 'press', element: element },
+      { action: 'moveTo', x: coordinates.x, y: coordinates.y },
+      'release'
+    ]);
+  }
 }

@@ -7,6 +7,7 @@ export class HomeScreen extends BaseScreen {
     this.alertViewsLabelSelector = '~Alert Views';
     this.stackViewsLabelSelector = '~Stack Views';
     this.slidersLabelSelector = '~Sliders';
+    this.textViewLabelSelector = '~Text View';
   }
 
   get alertViewsLabel() {
@@ -19,5 +20,9 @@ export class HomeScreen extends BaseScreen {
 
   get slidersLabel() {
     return new Label(this.slidersLabelSelector);
+  }
+
+  get textViewLabel() {
+    return new Label(this.textViewLabelSelector);
   }
 }

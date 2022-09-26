@@ -5,6 +5,7 @@ import { Input } from './input';
 import { Label } from './label';
 import { RadioButton } from './radioButton';
 import { Slider } from './slider';
+import { TextArea } from './textArea';
 import { Toggle } from './toggle';
 
-export { Label, Button, Icon, CheckBox, Toggle, Input, RadioButton, Slider };
+export { Label, Button, Icon, CheckBox, Toggle, Input, RadioButton, Slider, TextArea };

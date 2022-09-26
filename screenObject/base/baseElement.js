@@ -14,12 +14,20 @@ export class BaseElement {
     }
   }
 
+  async getElement() {
+    return await $(this.selector);
+  }
+
   async getText() {
     return await $(this.selector).getText();
   }
 
   async getValue() {
     return await $(this.selector).getValue();
+  }
+
+  async getElementCoordinates() {
+    return await $(this.selector).getLocation();
   }
 
   async isDisplayed() {
